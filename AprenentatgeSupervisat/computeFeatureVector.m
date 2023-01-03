@@ -7,7 +7,7 @@ GT = rgb2gray(image); % Passem la imatge a nivell de gris
 for i = 1:224
     for j = 1:224
         if (GT(i,j)>=255)
-            GT(i,j)=0;
+            GT(i,j)=mean2(image);
         end
     end
 end
